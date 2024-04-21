@@ -1,0 +1,269 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #ffffff;
+}
+
+/* PC用の設定 */
+@media screen and (min-width: 768px) {
+
+    #nav-sp {
+        display: none;
+    }
+        
+    body {
+
+        margin: 0 auto;
+    }
+
+    /* ヘッダー */
+    header {
+        font-weight: bold;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    #nav-pc > a {
+        text-decoration: none;
+        font-size: 34px;
+        position: relative;
+    }
+
+    #nav-a1 {
+        padding: 3px 15px;
+        border: #000000 1px solid;
+        position: absolute;
+        top: 0;
+        left: 25%;
+    }
+
+    #nav-pc > a:visited {
+        color: #000000;
+    }
+
+    #nav-pc > a:link {
+        color: #000000;
+    }
+
+    #nav-pc >a:hover {
+        color: #000000;
+    }
+
+    #nav-pc > a:active {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    #nav-a2 {
+        position: absolute;
+        top: 0;
+        left: 52%;
+    }
+
+    #nav-a3 {
+        position: absolute;
+        top: 0;
+        left: 55%;
+    }
+
+    /* カメラの写真 */
+    main > img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* About */
+    #about {
+        width: 960px;
+        margin: 20px auto 50px auto;
+    }
+
+    .title-h1 {
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px 0;
+    }
+
+    #about > div {
+        display: flex;
+    }
+
+    #about > div > img {
+        width: 30%;
+        border-radius: 50%;
+        margin: auto 100px;
+    }
+
+    #kazukiasahina {
+        padding-top: 50px;
+    }
+
+    #kazukiasahina > h2 {
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #kazukiasahina > ul {
+        font-size: 18px;
+    }
+
+    /* 風景写真+説明文 */
+    #works {
+        width: 700px;
+        margin: 20px auto 0 auto;
+    }
+
+    #works {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .works-div {
+        width: 33%;
+        margin: 20px 20px 20px 0;
+        text-align: center;
+    }
+
+    .works-div > p {
+        font-size: 18px;
+    }
+
+    .works-div > img {
+        width: 100%;
+    }
+
+    /* フッター */
+    footer {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
+/* スマホ用の設定 */
+@media screen and (max-width: 767px) {
+    #nav-pc {
+        display: none;
+    }
+
+    body {
+        min-width: 375px;
+        margin: 0 auto;
+        display: block;
+    }
+
+     /* ヘッダー */
+     header {
+        font-weight: bold;
+        margin: 20px auto;
+        width: 100%;
+    }
+    
+    #nav-sp {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nav-sp {
+        font-size: 34px;
+        position: relative;
+    }
+
+    #nav-sp > a {
+        text-decoration: none;
+        padding: 4px 20px;
+        border: #000000 1px solid;
+    }
+
+    #nav-sp > div > a {
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    #nav-sp > a:visited {
+        color: #000000;
+    }
+
+    #nav-sp > a:link {
+        color: #000000;
+    }
+
+    #nav-sp >a:hover {
+        color: #000000;
+    }
+
+    #nav-sp > a:active {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    #nav-sp > div > a:visited {
+        color: #000000;
+    }
+
+    #nav-sp > div > a:link {
+        color: #000000;
+    }
+
+    #nav-sp > div >a:hover {
+        color: #000000;
+    }
+
+    #nav-sp > div > a:active {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    /* カメラの写真 */
+    main > img {
+        max-width: 100%;
+    }
+
+    /* About */
+    .title-h1 {
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        margin: 50px 0;
+    }
+
+    #about > div {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    #about > div > img {
+        width: 45%;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    #kazukiasahina {
+        margin: 0 auto;
+    }
+
+    /* 風景写真+説明文 */
+    #works {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .works-div {
+       width: 100%;
+       text-align: center;
+       padding-bottom: 40px;
+    }
+
+    /* フッター */
+    footer {
+        margin: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
