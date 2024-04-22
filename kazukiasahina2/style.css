@@ -1,0 +1,242 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PC用 */
+@media screen and (min-width:768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ナビ */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 960px;
+        margin: 20px auto;
+    }
+
+    nav > div >a {
+        font-size: 34px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    nav > div > a:visited {
+        color: #000000;
+    }
+
+    nav > div > a:hover {
+        color: #000000;
+    }
+
+    nav > div > a:active {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    nav > div > a:link {
+        color: #000000;
+    }
+
+    #fome {
+        padding: 3px 10px;
+        border: #000000 1px solid;
+    }
+
+    .nav {
+        margin-right: 30px;
+    }
+
+    /* カメラの写真 */
+    main > img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* 各sectionの見出し */
+    .index-h1 {
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        margin: 70px 0;
+    }
+
+    /* about */
+    #about {
+        max-width: 960px;
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+
+    #about > div > img {
+        border-radius: 50%;
+        border: 3px solid #999;
+        padding: 3px;
+    }
+
+    #content {
+        margin: 50px 0 0 140px;
+    }
+
+    #content > h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /* works */
+    #works {
+        max-width: 960px;
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+        flex-wrap: wrap;   
+    }
+
+    #works > div {
+        width: 25%;
+    }
+
+    .works-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #works-center {
+        margin: 0 20px;
+    }
+
+    /* コピーライト */
+    footer {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+/* スマホ用 */
+@media screen and (max-width:767px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ナビ */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 960px;
+        margin: 20px auto;
+    }
+
+    nav > div >a {
+        font-size: 34px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    nav > div > a:visited {
+        color: #000000;
+    }
+
+    nav > div > a:hover {
+        color: #000000;
+    }
+
+    nav > div > a:active {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    nav > div > a:link {
+        color: #000000;
+    }
+
+    #fome {
+        margin-left: 20px;
+        padding: 3px 10px;
+        border: #000000 1px solid;
+    }
+
+    .nav {
+        margin-right: 30px;
+    }
+
+    /* カメラの写真 */
+    main > img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* 各sectionの見出し */
+    .index-h1 {
+        text-align: center;
+        font-size: 34px;
+        font-weight: bold;
+        margin: 70px 0;
+    }
+
+    /* about */
+    #about {
+        max-width: 960px;
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+        align-items: center;
+    }
+
+    #about > div > img {
+        border-radius: 50%;
+        border: 3px solid #999;
+        padding: 3px;
+        margin: 0 auto;
+    }
+
+    #content {
+        margin-left: 50px;
+    }
+
+    #content > h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /* works */
+    #works {
+        max-width: 960px;
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+        flex-wrap: wrap;   
+        align-items: center;
+    }
+
+    #works > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .works-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #works-center {
+        margin: 0 20px;
+    }
+
+    /* コピーライト */
+    footer {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+}
